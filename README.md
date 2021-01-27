@@ -1,62 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Sobre o Projeto 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Esse projeto foi desenvolvido com a finalidade de teste. 
 
-## About Laravel
+O teste proposto era que fizesse um banco de dados com 5,000 usuários e 15 mil registro de login. 
+Assim foi feito e pode ser executado de forma rápida e prática. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Recursos Utilizados: 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+> Mysql
+> Passport
+> Activy Log - Spatie
+> Factorys 
+> Bootstrap 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Observações: 
 
-## Learning Laravel
+Ao decorrer do teste observei algumas coisas que passaram talvez tenha passado e acabaram não percebendo. 
+Em uma das partes do documento explicativo do teste foi escrito: **Users** e também **Users_acess** essa duas formas que foram escritas no documento e pedindo que fossem escritas no banco de dados dessa forma elas não seguem o padrão de codificação do Laravel. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Se você observar a forma em que a palavra **users_acess** está escrita, está de forma errada. O correto seria: **access**, esse erro pequeno poderia travar algum programador que tivesse fazendo o serviço e lá na frente ele ia observar que estava errado, se ele fosse alterar isso custaria seu tempo. As regras de padronização são importantes e essênciais em qualquer projeto ou equipe. 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Segue abaixo o material de acesso sobre essa padronização e boas práticas do Laravel a qual me deram base para escrever até aqui sobre esse erro: 
 
-## Laravel Sponsors
+https://blog.renatolucena.net/post/boas-praticas-laravel
+https://johnatant.github.io/laraveltherightway/
+https://www.php-fig.org/psr/
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Layout 
+O Layout utilizado para a listagem dos usuários foi feito utilizando Bootstrap e um pouco de Css puro. 
+Dessa forma o Layout ficou bastante responsivo e rápido. 
 
-### Premium Partners
+- A tabela utilizada ficou no formato de Table-responsive, é um tipo formato em que o bootstrap utiliza e que fica bem elegante. 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+- Sistema responsivo e suportado em diversos modelos. 
+- Paginação de 20. 
 
-## Contributing
+## Como posso começar a visualizar essas informações ?
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Simples ! Você primeiro precisa ter o Xampp na versão mais atualizada, PHP pode ser o 7, não tem problema, aqui na minha máquina estou usando o 8. 
 
-## Code of Conduct
+- Faça o Download do Git: https://git-scm.com/downloads
+- Tenha o xampp instalado na máquina: https://www.apachefriends.org/pt_br/index.html
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Depois disso feito nós partimos para começar ele a funcionar. 
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
