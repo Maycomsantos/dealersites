@@ -76,4 +76,14 @@ Mais dúvidas a respeito do projeto, entrar em contato comigo através do Linked
 
 Ou através do Email: michaelsantos.the@hotmail.com
 
+## API 
+Como posso testar a api ? 
+Simples, você digita: **localhost:8000/api/users** 
+Provavelmente você verá um erro dizendo que a API não possui um login definido, isso acontece por que não existe uma tela de login e por isso ele não consegue pegar as chaves daquele usuário que está tentando acessar. 
+
+Para resolver isso e que vocês possam ver a api, é só apagar as linhas adicionadas no arquivo *api.php* e deixar somente essa linha: 
+ 
+ **Route::ApiResource('users', 'Api\UsersController');**
+
+
 
